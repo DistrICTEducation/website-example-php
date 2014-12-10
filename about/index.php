@@ -1,5 +1,7 @@
 <?php
     include_once './../_fragment_header.php';
+    include_once './../_fragment_footer.php';
+    include_once './_fragment_about.php';
     $page_name = 'about';
 ?>
 <!DOCTYPE html>
@@ -11,15 +13,8 @@
     <body>
 <?php
 fragment_header($page_name);
+fragment_about();
+fragment_footer();
 ?>
-        <h2>The author</h2>
-        <p>
-            
-        </p>
-        
-        <h2>The comic</h2>
-        <p>
-            
-        </p>
     </body>
 </html>

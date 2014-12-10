@@ -1,3 +1,7 @@
+<?php
+function fragment_login()
+{
+?>
 <form action="admin.php" method="POST">
     <table>
         <tr>
@@ -11,3 +15,6 @@
     </table>
     <input type="submit"/>
 </form>
+<?php
+}
+?>
