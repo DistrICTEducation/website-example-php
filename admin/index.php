@@ -16,14 +16,17 @@
 fragment_header($page_name);
 
 // Page contents depend on whether or not the user has been authenticated.
-if (! $_SESSION["user"])
+if (!isset($_SESSION["user"]) || empty($_SESSION["user"]))
 {
-    fragment_login();
+    fragment_login('index.php');
 }
 else
 {
+    // TODO : add separate pages for adding comics / pages, add overview of comics
     fragment_console();
 }
+
+fragment_console();
 
 fragment_footer();
 ?>

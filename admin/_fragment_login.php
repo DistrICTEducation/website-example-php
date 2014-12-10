@@ -1,8 +1,8 @@
 <?php
-function fragment_login()
+function fragment_login($action)
 {
 ?>
-<form action="admin.php" method="POST">
+<form action="<?php echo $action; ?>" method="POST">
     <table>
         <tr>
             <td>Username</td>
