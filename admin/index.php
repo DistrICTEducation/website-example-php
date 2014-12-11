@@ -3,13 +3,15 @@
     include_once './../_fragment_footer.php';
     include_once './_fragment_login.php';
     include_once './_fragment_console.php';
+    include_once './../_php/_config_definitions.php';
+    
     $page_name = 'about';
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Site administration</title>
+        <title><?php echo PAGE_TITLE; ?> - Site administration</title>
     </head>
     <body>
 <?php

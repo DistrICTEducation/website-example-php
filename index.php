@@ -2,13 +2,15 @@
     include_once './_fragment_header.php';
     include_once './_fragment_comics.php';
     include_once './_fragment_footer.php';
+    include_once './_php/_config_definitions.php';
+    
     $page_name = 'index';
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>My Web Comic</title>
+        <title><?php echo PAGE_TITLE; ?></title>
         <script src="_js/lib/jquery/jquery-1.11.1.js" lang="javascript"></script>
     </head>
     <body>
