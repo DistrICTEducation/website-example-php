@@ -1,9 +1,10 @@
 <?php
+    include_once './../_php/_config_definitions.php';
     include_once './../_fragment_header.php';
     include_once './../_fragment_footer.php';
+    include_once './../_php/_config_definitions.php';
     include_once './_fragment_login.php';
     include_once './_fragment_console.php';
-    include_once './../_php/_config_definitions.php';
     
     $page_name = 'about';
 ?>
